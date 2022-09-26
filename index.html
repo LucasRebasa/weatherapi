@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/dd3e4b1ff3.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <aside class="main-information">
+            <div class="search-container">
+                <input type="search" name="" id="" class="input-search" placeholder="Buscar ciudad">
+                <i class="fa-solid fa-magnifying-glass search" id="search-button"></i>
+            </div>
+            <div class="main-img-container">
+                <img class="main-img" src="./img/LightCloud.png" alt="" srcset="" id="main-img">
+            </div>
+            <div class="main-temp-container">
+                <h2 class="main-temp-container-h2"><b class="temp">15</b><b class="temp-units">°C</b></h2>
+                <h3 class="main-temp-description">Nublado</h3>
+            </div>
+            <div class="date-container">
+                <h4>Hoy</h4>
+                <h4>·</h4>
+                <h4 id="main-date">Vie, 12 Ago</h4>
+            </div>
+            <div class="location-container">
+                <h4><i class="fa-solid fa-location-dot"></i><b class="location"> Buenos Aires</b></h4>
+            </div>
+        </aside>
+        <div class="extra-information">
+            <div class="days-forecast">
+                <div class="day day-1">
+                    <h4 class="forecast-date">Mañana</h4>
+                    <div class="forecast-img-container">
+                        <img class="forecast-img" src="./img/Clear.png" alt="" srcset="">
+                    </div>
+                    <div class="extra-temp-container">
+                        <h5 class="max">"Max"</h5>
+                        <h5 class="min">"Min"</h5>
+                    </div>
+                </div>
+                <div class="day day-2">
+                    <h4 class="forecast-date">"Fecha"</h4>
+                    <div class="forecast-img-container">
+                        <img class="forecast-img" src="./img/Clear.png" alt="" srcset="">
+                    </div>
+                    <div class="extra-temp-container">
+                        <h5 class="max">"Max"</h5>
+                        <h5 class="min">"Min"</h5>
+                    </div>
+                </div>
+                <div class="day day-3">
+                    <h4 class="forecast-date">"Fecha"</h4>
+                    <div class="forecast-img-container">
+                        <img class="forecast-img" src="./img/Clear.png" alt="" srcset="">
+                    </div>
+                    <div class="extra-temp-container">
+                        <h5 class="max">"Max"</h5>
+                        <h5 class="min">"Min"</h5>
+                    </div>
+                </div>
+                <div class="day day-4">
+                    <h4 class="forecast-date">"Fecha"</h4>
+                    <div class="forecast-img-container">
+                        <img class="forecast-img" src="./img/Clear.png" alt="" srcset="">
+                    </div>
+                    <div class="extra-temp-container">
+                        <h5 class="max">"Max"</h5>
+                        <h5 class="min">"Min"</h5>
+                    </div>
+                </div>
+                <div class="day day-5">
+                    <h4 class="forecast-date">"Fecha"</h4>
+                    <div class="forecast-img-container">
+                        <img class="forecast-img" src="./img/Clear.png" alt="" srcset="">
+                    </div>
+                    <div class="extra-temp-container">
+                        <h5 class="max">"Max"</h5>
+                        <h5 class="min">"Min"</h5>
+                    </div>
+                </div>
+            </div>
+            <h2 class="highlights-title">Estadisticas del dia</h2>
+            <div class="today-highlights">
+                <div class="today-items today-wind">
+                    <h4>Estado del Viento</h4>
+                    <h3 id="wind">50 m/s</h3>
+                    <h4><i class="fa-solid fa-compass"></i>  <b class="wind-description"></b></h4>
+                </div>
+                <div class="today-items today-humidity">
+                    <h4>Humedad</h4>
+                    <h3><b id="humidity">80</b><b class="percentage">%</b></h3>
+                </div>
+                <div class="today-items today-visibility">
+                    <h4>Visibilidad</h4>
+                    <h3 id="visibility">20km</h3>
+                </div>
+                <div class="today-items today-pressure">
+                    <h4>Presion Atmosférica</h4>
+                    <h3 id="pressure">1054hpa</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
