@@ -43,18 +43,21 @@ let weather = {
         imgElem.src = this.selectImg(icon)
     },
     renderForecast: function(data){
+        console.log(data)
         let j = 0
         const maxTemp = document.querySelectorAll('.max')
         const minTemp = document.querySelectorAll('.min')
         const dates = document.querySelectorAll('.forecast-date')
         const imgs = document.querySelectorAll('.forecast-img')
         let index = this.findDayIndex(data.list)
+        console.log(index)
         for(let i=index;i<40;i=i+8){
+            console.log(data.list[0].main.temp_max)
             let maxElement = maxTemp[j]
             let minElement = minTemp[j]
             let date = dates[j]
             let img = imgs[j]
-            maxElement.innerHTML = Math.round(data.list[i].main.temp_max) + '°C'
+            maxElement.innerHTML = data.list[i].main.temp_max + '°C'
             minElement.innerHTML = Math.round(data.list[i].main.temp_min) + '°C'
             img.src = this.selectImg(data.list[i].weather[0].icon)
             if(j===0){
@@ -120,7 +123,7 @@ let weather = {
             let day = array[i]
             let dayDate = new Date(day.dt * 1000)
             if(dayDate.getTime() === today.getTime()){
-                return (i - 1)
+                return i; 
             } 
         }
     }
